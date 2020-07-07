@@ -1,13 +1,21 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const errorhandler = require('errorhandler');
 const path = require('path');
-const generatePassword = require('password-generator');
+//const generatePassword = require('password-generator');
 
+const apiRouter = require('./api/api');
 const app = express();
 
+app.use(bodyParser.json());
+app.use(cors());
+app.use(errorhandler());
+app.use('/api', apiRouter);
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
 
-// Put all API endpoints under '/api'
+/* Put all API endpoints under '/api'
 app.get('/api/passwords', (req, res) => {
   const count = 5;
 
@@ -20,7 +28,7 @@ app.get('/api/passwords', (req, res) => {
   res.json(passwords);
 
   console.log(`Sent ${count} passwords`);
-});
+});*/
 
 // The "catchall" handler: for any request that doesn't
 // match one above, send back React's index.html file.
