@@ -1,0 +1,15 @@
+{
+  "name": "heroku-test",
+  "version": "1.0.0",
+  "description": "testing react and express heroku deployment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Aidan Bradley Hall",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "password-generator": "^2.3.2"
+  }
+}
