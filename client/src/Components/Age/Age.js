@@ -1,7 +1,7 @@
 //This component will hold one question and potential answers and is meant
 //to determine whether you prefer your team to have younger or older players
 import React from 'react';
-import './Age.css';
+//import './Age.css';
 
 //define an async function outside of the class?
 
