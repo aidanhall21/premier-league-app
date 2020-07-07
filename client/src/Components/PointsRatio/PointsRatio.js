@@ -10,7 +10,7 @@ class Players extends React.Component {
     }
 
     updateStars() {
-        fetch('http://localhost:3001/api/ratio')
+        fetch('/api/ratio')
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -29,7 +29,7 @@ class Players extends React.Component {
     }
 
     updateScrubs() {
-        fetch('http://localhost:3001/api/ratio')
+        fetch('/api/ratio')
         .then(response => {
             if (response.ok) {
                 return response.json();

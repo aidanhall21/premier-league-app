@@ -11,7 +11,7 @@ class Balance extends React.Component {
 
     updateOffense() {
 
-        fetch('http://localhost:3001/api/balance')
+        fetch('/api/balance')
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -32,7 +32,7 @@ class Balance extends React.Component {
 
     updateDefense() {
 
-        fetch('http://localhost:3001/api/balance')
+        fetch('/api/balance')
         .then(response => {
             if (response.ok) {
                 return response.json();

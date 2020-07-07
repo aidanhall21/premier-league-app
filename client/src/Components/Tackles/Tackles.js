@@ -11,7 +11,7 @@ class Tackles extends React.Component {
 
     updateAggressive() {
 
-        fetch('http://localhost:3001/api/tackles')
+        fetch('/api/tackles')
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -31,7 +31,7 @@ class Tackles extends React.Component {
 
     updateClean() {
 
-        fetch('http://localhost:3001/api/tackles')
+        fetch('/api/tackles')
         .then(response => {
             if (response.ok) {
                 return response.json();

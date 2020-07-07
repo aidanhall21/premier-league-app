@@ -11,7 +11,7 @@ class Passing extends React.Component {
 
     updatePassing() {
 
-        fetch('http://localhost:3001/api/passing')
+        fetch('/api/passing')
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -31,7 +31,7 @@ class Passing extends React.Component {
 
     updateDribbling() {
 
-        fetch('http://localhost:3001/api/passing')
+        fetch('/api/passing')
         .then(response => {
             if (response.ok) {
                 return response.json();

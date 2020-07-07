@@ -11,7 +11,7 @@ class Color extends React.Component {
     }
 
     updateRed() {
-        fetch('http://localhost:3001/api/colour')
+        fetch('/api/colour')
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -29,7 +29,7 @@ class Color extends React.Component {
     }
 
     updateBlue() {
-        fetch('http://localhost:3001/api/colour')
+        fetch('/api/colour')
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -47,7 +47,7 @@ class Color extends React.Component {
     }
 
     updateOther() {
-        fetch('http://localhost:3001/api/colour')
+        fetch('/api/colour')
         .then(response => {
             if (response.ok) {
                 return response.json();

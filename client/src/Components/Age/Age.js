@@ -17,7 +17,7 @@ class Age extends React.Component {
         //passes an array to the prop function updateScore
         //this array contains a list of team names with an older average age
         //first need to make an api call to get those teams
-        fetch('https://floating-wave-65627.herokuapp.com/api/age')
+        fetch('/api/age')
         .then(response => {
             if (response.ok) {
                 return response.json();

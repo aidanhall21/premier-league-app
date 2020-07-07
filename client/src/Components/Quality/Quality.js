@@ -10,7 +10,7 @@ class Quality extends React.Component {
     }
 
     updateFavorite() {
-        fetch('http://localhost:3001/api/quality')
+        fetch('/api/quality')
         .then(response => {
             if (response.ok) {
                 return response.json();
@@ -30,7 +30,7 @@ class Quality extends React.Component {
     }
 
     updateUnderdog() {
-        fetch('http://localhost:3001/api/quality')
+        fetch('/api/quality')
         .then(response => {
             if (response.ok) {
                 return response.json();
