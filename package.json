@@ -16,6 +16,7 @@
     "errorhandler": "^1.5.1",
     "express": "^4.17.1",
     "password-generator": "^2.3.2",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "pg": "^8.2.2"
   }
 }
