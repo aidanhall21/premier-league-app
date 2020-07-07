@@ -4,11 +4,13 @@
   "description": "testing react and express heroku deployment",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "Aidan Bradley Hall",
   "license": "ISC",
   "dependencies": {
+    "create-react-app": "^3.4.1",
     "express": "^4.17.1",
     "password-generator": "^2.3.2"
   }
