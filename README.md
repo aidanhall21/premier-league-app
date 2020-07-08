@@ -2,7 +2,7 @@
 
 Simply make a selection for each one of the questions and you'll have your new rooting interest.
 
-Built using Javascript, node.js, React, and Express. Deployed using Heroku with Postgres addon.
+Built using Javascript, node.js, React, Create-React-App, and Express. Deployed using Heroku with Postgres add-on.
 
 Version 1.0 released on July 6, 2020.
 

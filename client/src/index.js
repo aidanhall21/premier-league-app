@@ -1,3 +1,4 @@
+//Rendering the app component into the index.html file
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';

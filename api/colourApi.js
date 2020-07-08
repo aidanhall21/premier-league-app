@@ -1,11 +1,15 @@
+//Defines the /api/colour endpoint
+//require in our database pool
+//and instantiate a router
 const db = require('../db/index');
 const express = require('express');
 const colourRouter = express.Router();
-//const teamsdb = require('./dbtest');
+
+//define the database query
 const query = `SELECT name, color FROM teams_info`;
 
 //this GET request grabs all teams in the premierleague from a database table
-//this request will be used to set the intial state of the React App
+//and their main color, returned as an array of objects
 colourRouter.get('/', (req, res, next) => {
     return new Promise((resolve, reject) => {
         db.query(query, (err, res) => {

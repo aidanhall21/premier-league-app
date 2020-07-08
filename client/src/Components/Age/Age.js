@@ -1,10 +1,10 @@
 //This component will hold one question and potential answers and is meant
 //to determine whether you prefer your team to have younger or older players
+
+//import React
 import React from 'react';
-//import './Age.css';
 
-//define an async function outside of the class?
-
+//create a child class
 class Age extends React.Component {
     constructor(props) {
         super(props);
@@ -34,7 +34,6 @@ class Age extends React.Component {
         })
         .then(arrayOfObjectsToUpdate => {
             this.selection = 'vets';
-            //reduce this to just the team names as an object
             this.props.onUpdate(arrayOfObjectsToUpdate);
         })  
     }
@@ -67,6 +66,7 @@ class Age extends React.Component {
 
     render() {
 
+        //when an answer is selected the CSS class for that element will update
         let vets;
         let rookies;
 

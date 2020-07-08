@@ -1,7 +1,11 @@
+//Defines the /api/ratio endpoint
+//require in our database pool
+//and instantiate a router
 const db = require('../db/index');
 const express = require('express');
 const pointsRatioRouter = express.Router();
 
+//define the database query
 const query = `WITH Points AS (SELECT name, team_name AS team1, goals, assists, SUM(goals + assists) AS points
                     FROM players
                     GROUP BY 1, 2, 3, 4
@@ -21,6 +25,8 @@ const query = `WITH Points AS (SELECT name, team_name AS team1, goals, assists, 
                     FROM Running_Points)
                 SELECT team1 AS name, total_points, top_3_ratio FROM Running_Points_Rows WHERE row = 3`;
 
+//this GET request will return the top 3 players by points scored for each team
+//returned as an array of objects
 pointsRatioRouter.get('/', (req, res, next) => {
     return new Promise((resolve, reject) => {
         db.query(query, (err, res) => {
