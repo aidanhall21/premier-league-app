@@ -1,3 +1,5 @@
+//This is the main stateful component
+//import all other components
 import React from 'react';
 import Age from '../Age/Age';
 import Color from '../Color/Color';
@@ -8,6 +10,7 @@ import Passing from '../Passing/Passing';
 import Balance from '../Balance/Balance';
 import Results from '../Results/Results';
 
+//import the main stylesheet for the whole app
 import './App.css';
 
 class App extends React.Component {
@@ -28,6 +31,7 @@ class App extends React.Component {
 
   updateData(updateObj) {
 
+    //adds a new object derived from a database call to the data array in state
     const mergedState = [...this.state.data, ...updateObj];
     this.setState({ data: mergedState });
 
@@ -35,6 +39,8 @@ class App extends React.Component {
 
   updateResults(team, obj) {
 
+    //when the show results button is pushed this function 
+    //will update the other states to show the users favorite team
     this.setState({ results: true });
     this.setState({ favTeam: team });
     this.setState({ favTeamObj: obj })

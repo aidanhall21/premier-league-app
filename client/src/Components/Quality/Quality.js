@@ -1,3 +1,7 @@
+//This component will hold one question and potential answers and is meant
+//to determine which color jersey you'd prefer rooting for
+
+//import React
 import React from 'react';
 
 class Quality extends React.Component {
@@ -10,6 +14,9 @@ class Quality extends React.Component {
     }
 
     updateFavorite() {
+
+        //passes an array to the prop function updateScore
+        //first need to make an api call
         fetch('/api/quality')
         .then(response => {
             if (response.ok) {
@@ -53,6 +60,7 @@ class Quality extends React.Component {
 
     render() {
 
+        //adds the CSS class selected to element that was clicked
         let favorite;
         let underdog;
 

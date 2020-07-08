@@ -1,3 +1,7 @@
+//This component will hold one question and potential answers and is meant
+//to determine which color jersey you'd prefer rooting for
+
+//import React
 const React = require('react');
 
 class Color extends React.Component {
@@ -11,6 +15,9 @@ class Color extends React.Component {
     }
 
     updateRed() {
+
+        //passes an array to the prop function updateScore
+        //first need to make an api call
         fetch('/api/colour')
         .then(response => {
             if (response.ok) {
@@ -66,6 +73,7 @@ class Color extends React.Component {
 
     render() {
 
+        //adds the CSS class selected to element that was clicked
         let red;
         let blue;
         let other;

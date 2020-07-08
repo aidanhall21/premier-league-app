@@ -1,3 +1,7 @@
+//This component will hold one question and potential answers and is meant
+//to determine which color jersey you'd prefer rooting for
+
+//import React
 import React from 'react';
 
 class Tackles extends React.Component {
@@ -11,6 +15,8 @@ class Tackles extends React.Component {
 
     updateAggressive() {
 
+        //passes an array to the prop function updateScore
+        //first need to make an api call
         fetch('/api/tackles')
         .then(response => {
             if (response.ok) {
@@ -51,6 +57,7 @@ class Tackles extends React.Component {
 
     render() {
 
+        //adds the CSS class selected to element that was clicked
         let aggressive;
         let clean;
 

@@ -1,7 +1,7 @@
 {
-  "name": "heroku-test",
+  "name": "epl-test",
   "version": "1.0.0",
-  "description": "testing react and express heroku deployment",
+  "description": "This app will help you find your new favorite Premier League team",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",

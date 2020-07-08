@@ -1,3 +1,7 @@
+//This component will hold one question and potential answers and is meant
+//to determine which color jersey you'd prefer rooting for
+
+//import React
 import React from 'react';
 
 class Passing extends React.Component {
@@ -11,6 +15,8 @@ class Passing extends React.Component {
 
     updatePassing() {
 
+        //passes an array to the prop function updateScore
+        //first need to make an api call
         fetch('/api/passing')
         .then(response => {
             if (response.ok) {
@@ -50,7 +56,8 @@ class Passing extends React.Component {
     }
 
     render() {
-
+        
+        //adds the CSS class selected to element that was clicked
         let passing;
         let dribbling;
 

@@ -1,3 +1,7 @@
+//This component will hold one question and potential answers and is meant
+//to determine whether you prefer your team to excel on the offensive or defensive side of the ball
+
+//import React
 import React from 'react';
 
 class Balance extends React.Component {
@@ -11,6 +15,8 @@ class Balance extends React.Component {
 
     updateOffense() {
 
+        //passes an array to the prop function updateScore
+        //first need to make an api call
         fetch('/api/balance')
         .then(response => {
             if (response.ok) {
@@ -53,6 +59,7 @@ class Balance extends React.Component {
 
     render() {
 
+        //adds the CSS class selected to element that was clicked
         let offense;
         let defense;
 
