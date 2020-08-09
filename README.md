@@ -11,3 +11,11 @@ View the app at www.aidanbradleyhall.com
 Any questions or comments please contact me at aidanhall21@gmail.com
 
 Enjoy!
+
+New Feature To Do List:
+
+* Start Over Button
+* Managing multiple selections on one answer
+* Multiple Teams displayed after submit button
+* Data display after results button is hit
+* CSS for mobile/update meta stuff in html (like title/favicon)
